@@ -80,17 +80,6 @@ const Skills = () => {
     }
   ];
 
-  const certifications = [
-    'Flutter Advanced Development',
-    'React & TypeScript Mastery',
-    'Full Stack Web Development',
-    'SEO & Digital Marketing',
-    'Machine Learning Fundamentals',
-    'IoT & Healthcare Technology',
-    'Research Methodology & Publication',
-    'Agile Development Practices',
-    'Technical Leadership'
-  ];
 
   return (
     <section id="skills" className="py-20 bg-gradient-to-br from-slate-900 via-indigo-950/20 to-purple-950/30 relative overflow-hidden">
