@@ -64,7 +64,7 @@ const Experience = () => {
         'Collaborating with NGOs and community leaders to identify technology needs',
         'Making significant impact in community development through technology integration'
       ],
-      technologies: ['Leadership', 'Coordination' 'Community Outreach', 'Project Management', 'Digital Literacy'],
+      technologies: ['Leadership', 'Coordination', 'Community Outreach', 'Project Management', 'Digital Literacy'],
       icon: Users,
       gradient: 'from-emerald-400 to-cyan-500',
       status: 'High Impact Project'
