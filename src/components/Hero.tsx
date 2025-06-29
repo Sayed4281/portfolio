@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Mail, Download, Code, Smartphone, Search } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Download, Code, Smartphone } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -80,9 +80,6 @@ const Hero = () => {
               <div className="absolute top-1/2 -right-4 w-8 h-8 bg-cyan-500 rounded-xl flex items-center justify-center transform -translate-y-1/2 shadow-lg">
                 <Smartphone size={16} className="text-white" />
               </div>
-              <div className="absolute -bottom-4 left-1/2 w-8 h-8 bg-purple-500 rounded-xl flex items-center justify-center transform -translate-x-1/2 shadow-lg">
-                <Search size={16} className="text-white" />
-              </div>
             </motion.div>
           </motion.div>
 
@@ -121,7 +118,7 @@ const Hero = () => {
               transition={{ duration: 4, repeat: Infinity, delay: 2 }}
               className="bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-300% bg-clip-text text-transparent font-semibold text-xl md:text-2xl"
             >
-              AI/ML Enthusiast • SEO Analyst
+              AI ML Enthusiast • SEO Analyst
             </motion.div>
           </motion.div>
 
@@ -200,7 +197,7 @@ const Hero = () => {
             </motion.a>
             
             <motion.a
-              href="/SAYED SHAHLOOB P (2).pdf"
+              href="/resume.pdf"
               download="SAYED_SHAHLOOB_P_Resume.pdf"
               whileHover={{ 
                 scale: 1.05,
