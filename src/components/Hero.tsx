@@ -1,8 +1,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Mail, Download, Code, Smartphone } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Download, Code, Smartphone, Search } from 'lucide-react';
 
 const Hero = () => {
+  const handleResumeDownload = () => {
+    // Use the correct filename that exists in the public folder
+    const link = document.createElement('a');
+    link.href = '/sayed_shahloob_p.pdf';
+    link.download = 'SAYED_SHAHLOOB_P_Resume.pdf';
+    
+    // Check if file exists before attempting download
+    fetch('/sayed_shahloob_p.pdf', { method: 'HEAD' })
+      .then(response => {
+        if (response.ok) {
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        } else {
+          // Fallback: show message or redirect to contact
+          alert('Resume is currently being updated. Please contact me directly at sayedshahloobp@gmail.com for the latest version.');
+        }
+      })
+      .catch(() => {
+        alert('Resume is currently being updated. Please contact me directly at sayedshahloobp@gmail.com for the latest version.');
+      });
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Professional Background */}
@@ -79,6 +102,9 @@ const Hero = () => {
               </div>
               <div className="absolute top-1/2 -right-4 w-8 h-8 bg-cyan-500 rounded-xl flex items-center justify-center transform -translate-y-1/2 shadow-lg">
                 <Smartphone size={16} className="text-white" />
+              </div>
+              <div className="absolute -bottom-4 left-1/2 w-8 h-8 bg-purple-500 rounded-xl flex items-center justify-center transform -translate-x-1/2 shadow-lg">
+                <Search size={16} className="text-white" />
               </div>
             </motion.div>
           </motion.div>
@@ -196,9 +222,8 @@ const Hero = () => {
               />
             </motion.a>
             
-            <motion.a
-              href="/resume.pdf"
-              download="SAYED_SHAHLOOB_P_Resume.pdf"
+            <motion.button
+              onClick={handleResumeDownload}
               whileHover={{ 
                 scale: 1.05,
                 boxShadow: "0 0 40px rgba(6, 182, 212, 0.5)"
@@ -214,7 +239,7 @@ const Hero = () => {
                 whileHover={{ scale: 1 }}
                 transition={{ duration: 0.3 }}
               />
-            </motion.a>
+            </motion.button>
           </motion.div>
         </motion.div>
 
