@@ -121,7 +121,7 @@ const Hero = () => {
               transition={{ duration: 4, repeat: Infinity, delay: 2 }}
               className="bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-300% bg-clip-text text-transparent font-semibold text-xl md:text-2xl"
             >
-              AI/ML Enthusiast • SEO Analyst
+              AI ML Enthusiast • SEO Analyst
             </motion.div>
           </motion.div>
 
@@ -201,8 +201,7 @@ const Hero = () => {
             
             <motion.a
               href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              download="SAYED_SHAHLOOB_P_Resume.pdf"
               whileHover={{ 
                 scale: 1.05,
                 boxShadow: "0 0 40px rgba(6, 182, 212, 0.5)"
