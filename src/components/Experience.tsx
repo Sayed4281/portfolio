@@ -10,7 +10,7 @@ const Experience = () => {
     {
       title: 'Jr. Frontend Developer',
       company: 'Pro26',
-      location: 'Majeria',
+      location: 'Manjeri',
       period: '2025 - Present',
       type: 'Professional',
       description: [
@@ -21,7 +21,7 @@ const Experience = () => {
         'Working on enterprise-level applications with focus on performance optimization',
         'Participating in agile development processes and sprint planning sessions'
       ],
-      technologies: ['React', 'JavaScript', 'TypeScript', 'CSS3', 'HTML5', 'Git', 'Agile'],
+      technologies: ['Flutter', 'Dart', 'Getx', 'Oops', 'Agile'],
       icon: Building,
       gradient: 'from-blue-400 to-indigo-500',
       status: 'Current Position'
@@ -64,7 +64,7 @@ const Experience = () => {
         'Collaborating with NGOs and community leaders to identify technology needs',
         'Making significant impact in community development through technology integration'
       ],
-      technologies: ['Flutter', 'Community Outreach', 'Project Management', 'Leadership', 'Coordination', 'Digital Literacy'],
+      technologies: ['Leadership', 'Coordination' 'Community Outreach', 'Project Management', 'Digital Literacy'],
       icon: Users,
       gradient: 'from-emerald-400 to-cyan-500',
       status: 'High Impact Project'
